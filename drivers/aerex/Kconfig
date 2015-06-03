@@ -1,0 +1,11 @@
+#
+# Misc strange devices
+#
+
+menu "Aerex Drone"
+
+source "drivers/aerex/bosch/Kconfig"
+source "drivers/aerex/meas-spec/Kconfig"
+source "drivers/aerex/servodrive/Kconfig"
+
+endmenu

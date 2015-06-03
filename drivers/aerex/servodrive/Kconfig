@@ -1,0 +1,13 @@
+#
+# Misc strange devices
+#
+config SERVODRIVE
+	tristate "Eable PWM Servo Control via GPIO pins"
+	help
+	The driver implements pulse width modulation (PWM) by pulsing the 
+	gpio signals which are connected to the signaling wire of a standard 
+	RC servo. Any pin on the expansion header may be used to generate the
+	PWM signal provided the MUX has been properly configured in u-boot
+	or linux kernel. If you do not want to change the MUX configuration,
+	as a starting point you can try the following pins which are confirmed
+	to work with standard angstrom demo image and u-boot:

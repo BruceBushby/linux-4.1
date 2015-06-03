@@ -1,0 +1,5 @@
+menu "Bosch Sensortech"
+
+source "drivers/aerex/bosch/bgsh/Kconfig"
+
+endmenu
