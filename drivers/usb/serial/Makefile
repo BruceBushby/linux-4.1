@@ -46,6 +46,7 @@ obj-$(CONFIG_USB_SERIAL_OTI6858)		+= oti6858.o
 obj-$(CONFIG_USB_SERIAL_PL2303)			+= pl2303.o
 obj-$(CONFIG_USB_SERIAL_QCAUX)			+= qcaux.o
 obj-$(CONFIG_USB_SERIAL_QUALCOMM)		+= qcserial.o
+obj-$(CONFIG_USB_SERIAL_QUALCOMM_GOBI)		+= GobiSerial.o
 obj-$(CONFIG_USB_SERIAL_QT2)			+= quatech2.o
 obj-$(CONFIG_USB_SERIAL_SAFE)			+= safe_serial.o
 obj-$(CONFIG_USB_SERIAL_SIERRAWIRELESS)		+= sierra.o

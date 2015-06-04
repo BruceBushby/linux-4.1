@@ -549,6 +549,17 @@ config USB_SERIAL_QUALCOMM
 	  To compile this driver as a module, choose M here: the
 	  module will be called qcserial.
 
+config	USB_SERIAL_QUALCOMM_GOBI
+	tristate "Qualcomm GOBI modem"
+	select USB_SERIAL_WWAN
+	help
+	  Say Y here if you have a Qualcomm USB modem device.  These are
+	  usually wireless cellular modems.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called GobiSerial.
+
+
 config USB_SERIAL_SPCP8X5
 	tristate "USB SPCP8x5 USB To Serial Driver"
 	help
