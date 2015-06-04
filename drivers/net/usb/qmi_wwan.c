@@ -554,6 +554,7 @@ static const struct usb_device_id products[] = {
 	{QMI_FIXED_INTF(0x05c6, 0x8000, 7)},
 	{QMI_FIXED_INTF(0x05c6, 0x8001, 6)},
 	{QMI_FIXED_INTF(0x05c6, 0x9000, 4)},
+	{QMI_FIXED_INTF(0x1e0e, 0x9001, 4)},
 	{QMI_FIXED_INTF(0x05c6, 0x9003, 4)},
 	{QMI_FIXED_INTF(0x05c6, 0x9005, 2)},
 	{QMI_FIXED_INTF(0x05c6, 0x900a, 4)},
@@ -821,6 +822,7 @@ static const struct usb_device_id products[] = {
 	{QMI_GOBI_DEVICE(0x0af0, 0x8120)},	/* Option GTM681W */
 	{QMI_GOBI_DEVICE(0x1199, 0x68a5)},	/* Sierra Wireless Modem */
 	{QMI_GOBI_DEVICE(0x1199, 0x68a9)},	/* Sierra Wireless Modem */
+	{QMI_GOBI_DEVICE(0x1e0e, 0x9001)},	/* SimCom SIM7100E Gobi 3000 LTE Modem */ 
 	{QMI_GOBI_DEVICE(0x1199, 0x9001)},	/* Sierra Wireless Gobi 2000 Modem device (VT773) */
 	{QMI_GOBI_DEVICE(0x1199, 0x9002)},	/* Sierra Wireless Gobi 2000 Modem device (VT773) */
 	{QMI_GOBI_DEVICE(0x1199, 0x9003)},	/* Sierra Wireless Gobi 2000 Modem device (VT773) */
