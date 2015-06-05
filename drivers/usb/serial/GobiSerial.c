@@ -159,6 +159,7 @@ static struct usb_device_id GobiVIDPIDTable[] =
    { USB_DEVICE( 0x03f0, 0x371d ) },   // Gobi 3000 HP un2430 Device
    { USB_DEVICE( 0x1410, 0xa021 ) },   // Novatel Wireless E396 - Gobi VID/PID
    { USB_DEVICE( 0x1410, 0xa023 ) },   // Novatel Wireless E346 - Gobi VID/PID
+   { USB_DEVICE( 0x1e0e, 0x9001 ) },   // SimCom SIM7100E LTE VID/PID 
    { }                               // Terminating entry
 };
 MODULE_DEVICE_TABLE( usb, GobiVIDPIDTable );
