@@ -510,6 +510,47 @@ config USB_NET_QMI_WWAN
 	  To compile this driver as a module, choose M here: the
 	  module will be called qmi_wwan.
 
+config USB_NET_QMI_WWAN1
+	depends on USB_USBNET
+	select USB_WDM
+	help
+	  Support WWAN LTE/3G devices based on Qualcomm Mobile Data Modem
+config USB_NET_QMI_WWAN2
+	depends on USB_USBNET
+	select USB_WDM
+	help
+	  Support WWAN LTE/3G devices based on Qualcomm Mobile Data Modem
+config USB_NET_QMI_WWAN3
+	depends on USB_USBNET
+	select USB_WDM
+	help
+	  Support WWAN LTE/3G devices based on Qualcomm Mobile Data Modem
+config USB_NET_QMI_WWAN4
+	depends on USB_USBNET
+	select USB_WDM
+	help
+	  Support WWAN LTE/3G devices based on Qualcomm Mobile Data Modem
+config USB_NET_QMI_WWAN5
+	depends on USB_USBNET
+	select USB_WDM
+	help
+	  Support WWAN LTE/3G devices based on Qualcomm Mobile Data Modem
+config USB_NET_QMI_WWAN6
+	depends on USB_USBNET
+	select USB_WDM
+	help
+	  Support WWAN LTE/3G devices based on Qualcomm Mobile Data Modem
+config USB_NET_QMI_WWAN7
+	depends on USB_USBNET
+	select USB_WDM
+	help
+	  Support WWAN LTE/3G devices based on Qualcomm Mobile Data Modem
+config USB_NET_QMI_WWAN8
+	depends on USB_USBNET
+	select USB_WDM
+	help
+	  Support WWAN LTE/3G devices based on Qualcomm Mobile Data Modem
+
 config USB_HSO
 	tristate "Option USB High Speed Mobile Devices"
 	depends on USB && RFKILL && TTY
