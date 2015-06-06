@@ -37,12 +37,3 @@ obj-$(CONFIG_USB_NET_HUAWEI_CDC_NCM)	+= huawei_cdc_ncm.o
 obj-$(CONFIG_USB_VL600)		+= lg-vl600.o
 obj-$(CONFIG_USB_NET_CDC_MBIM)	+= cdc_mbim.o
 obj-$(CONFIG_USB_NET_QMI_WWAN)	+= qmi_wwan.o
-obj-$(CONFIG_USB_NET_QMI_WWAN1)	+= qmi_wwan1.o
-obj-$(CONFIG_USB_NET_QMI_WWAN2)	+= qmi_wwan2.o
-obj-$(CONFIG_USB_NET_QMI_WWAN3)	+= qmi_wwan3.o
-obj-$(CONFIG_USB_NET_QMI_WWAN4)	+= qmi_wwan4.o
-obj-$(CONFIG_USB_NET_QMI_WWAN5)	+= qmi_wwan5.o
-obj-$(CONFIG_USB_NET_QMI_WWAN6)	+= qmi_wwan6.o
-obj-$(CONFIG_USB_NET_QMI_WWAN7)	+= qmi_wwan7.o
-obj-$(CONFIG_USB_NET_QMI_WWAN8)	+= qmi_wwan8.o
-

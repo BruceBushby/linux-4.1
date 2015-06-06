@@ -554,7 +554,7 @@ static const struct usb_device_id products[] = {
 	{QMI_FIXED_INTF(0x05c6, 0x8000, 7)},
 	{QMI_FIXED_INTF(0x05c6, 0x8001, 6)},
 	{QMI_FIXED_INTF(0x05c6, 0x9000, 4)},
-	{QMI_FIXED_INTF(0x1e0e, 0x9001, 3)},
+	{QMI_FIXED_INTF(0x1e0e, 0x9001, 5)},
 	{QMI_FIXED_INTF(0x05c6, 0x9003, 4)},
 	{QMI_FIXED_INTF(0x05c6, 0x9005, 2)},
 	{QMI_FIXED_INTF(0x05c6, 0x900a, 4)},
