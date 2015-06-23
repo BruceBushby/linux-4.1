@@ -59,6 +59,7 @@
 
 	aliases {
 		serial0 = &uart1;
+		serial0 = &uart3;
 	};
 
 	soc@01c00000 {
@@ -94,7 +95,7 @@
 			};
 
 			led_pins_olinuxinom: led_pins@0 {
-				allwinner,pins = "PG9";
+				allwinner,pins = "PB4";
 				allwinner,function = "gpio_out";
 				allwinner,drive = <SUN4I_PINCTRL_20_MA>;
 				allwinner,pull = <SUN4I_PINCTRL_NO_PULL>;
@@ -114,16 +115,38 @@
 			status = "okay";
 		};
 
+		uart3: serial@01c28c00 {
+			pinctrl-names = "default";
+			pinctrl-0 = <&uart3_pins_a>;
+			status = "okay";
+		};
+
 		i2c0: i2c@01c2ac00 {
 			pinctrl-names = "default";
 			pinctrl-0 = <&i2c0_pins_a>;
 			status = "okay";
+
+			bgsh@29 {
+				compatible = "bgsh_i2c";
+				reg = <0x29>;
+			};
+
 		};
 
 		i2c1: i2c@01c2b000 {
 			pinctrl-names = "default";
 			pinctrl-0 = <&i2c1_pins_a>;
 			status = "okay";
+
+			ms5611@77 {
+				compatible = "ms5611";
+				reg = <0x77>;
+			};
+
+			pca9685@70 {
+				compatible = "pwm_pca9685";
+				reg = <0x70>;
+			};
 		};
 
 		i2c2: i2c@01c2b400 {
