@@ -127,7 +127,7 @@
 			status = "okay";
 
 			bgsh@29 {
-				compatible = "bgsh_i2c";
+				compatible = "bgsh";
 				reg = <0x29>;
 			};
 
@@ -138,14 +138,14 @@
 			pinctrl-0 = <&i2c1_pins_a>;
 			status = "okay";
 
-			ms5611@77 {
+			ms5611@76 {
 				compatible = "ms5611";
-				reg = <0x77>;
+				reg = <0x76>;
 			};
 
-			pca9685@70 {
-				compatible = "pwm_pca9685";
-				reg = <0x70>;
+			pca9685@40 {
+				compatible = "pca9685-pwm";
+				reg = <0x40>;
 			};
 		};
 
