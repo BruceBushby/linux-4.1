@@ -130,16 +130,6 @@
 			pinctrl-names = "default";
 			pinctrl-0 = <&i2c1_pins_a>;
 			status = "okay";
-
-			ms5611@76 {
-				compatible = "ms5611";
-				reg = <0x76>;
-			};
-
-			pca9685@40 {
-				compatible = "pca9685-pwm";
-				reg = <0x40>;
-			};
 		};
 
 		i2c2: i2c@01c2b400 {
