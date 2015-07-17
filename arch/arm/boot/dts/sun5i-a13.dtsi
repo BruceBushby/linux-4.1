@@ -235,8 +235,7 @@
 			compatible = "allwinner,sun5i-a13-apb1-gates-clk";
 			reg = <0x01c2006c 0x4>;
 			clocks = <&apb1>;
-			clock-output-names = "apb1_i2c0", "apb1_i2c1",
-				"apb1_i2c2", "apb1_uart1", "apb1_uart3";
+			clock-output-names = "apb1_i2c0", "apb1_i2c1", "apb1_i2c2", "apb1_uart1", "apb1_uart3";
 		};
 
 		nand_clk: clk@01c20080 {
@@ -594,7 +593,7 @@
 
 		i2c1: i2c@01c2b000 {
 			compatible = "allwinner,sun5i-a13-i2c", "allwinner,sun4i-a10-i2c";
-			reg = <0x01c2b000 0x400>;
+			reg = <0x01c2b000 0x200>;
 			interrupts = <8>;
 			clocks = <&apb1_gates 1>;
 			status = "disabled";
@@ -604,7 +603,7 @@
 
 		i2c2: i2c@01c2b400 {
 			compatible = "allwinner,sun5i-a13-i2c", "allwinner,sun4i-a10-i2c";
-			reg = <0x01c2b400 0x400>;
+			reg = <0x01c2b400 0x200>;
 			interrupts = <9>;
 			clocks = <&apb1_gates 2>;
 			status = "disabled";
